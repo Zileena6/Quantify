@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: rgb(45, 194, 129);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: x-large;
+    font-weight: 600;
+    padding-left: 3rem;
+}
+
+    a:hover {
+        color: rgb(187, 140, 247);
+    }
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h1 {
+    color: rgb(187, 140, 247);
+    font-size: 3rem;
+    font-weight: 900;
+    width: 40%;
+}
+
+h2 {
+    color: rgb(48, 24, 79);
+    padding-bottom: 1rem;
+}
+
+header,
+footer {
+    background-color: rgb(11, 142, 85);
+    color: white;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 1rem;
+}
+
+.pb-3 {
+    padding: 3rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .description {
+        width: 40%;
+    }
+}
+
+.product {
+    width: 80%;
+    color: rgb(48, 24, 79);
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.description > p {
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.2rem;
+
+    a {
+        font-size: inherit;
+        padding: 0;
+    }
+}
